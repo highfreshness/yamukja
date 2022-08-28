@@ -29,7 +29,7 @@ async def input(request: Request):
     # 1) 입력받은 값이 없는 경우
     if not keyword:  # 키워드가 없다면 사용자에게 검색을 요구
         context = {"request": request}
-        return templates.TemplateResponse("index(menu).html", context=context)
+        return templates.TemplateResponse("index2.html", context=context)
     else:
         # 이미 DB에 저장되어 있는 자료라면
         if mongodb.db["ya"].find_one({"keyword": keyword}):
