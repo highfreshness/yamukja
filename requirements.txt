@@ -1,9 +1,10 @@
 jinja2
 aiofiles
 fastapi
-uvicorn-standard
-odmantic
-"pymongo[srv]"
+uvicorn
+fake_useragent
+bs4
+pymongo[srv]
 aiohttp
 folium
 pandas
@@ -12,3 +13,5 @@ googlemaps
 tqdm
 lightgbm
 joblib
+uvicorn
+geopy
