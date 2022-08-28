@@ -1,0 +1,14 @@
+jinja2
+aiofiles
+fastapi
+uvicorn-standard
+odmantic
+"pymongo[srv]"
+aiohttp
+folium
+pandas
+scikit-learn
+googlemaps
+tqdm
+lightgbm
+joblib
