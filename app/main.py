@@ -46,11 +46,9 @@ async def input(request: Request):
             mango_scraper = MangoScraper()
             mango_data = await mango_scraper.search(keyword)
             df = make_df(mango_data)
-            print(df)
             get_loccat = GetLocCat()
             new_df = get_loccat.run(keyword, df)  # keyword 와 관련된 지도 좌표와 DataFrame을 반환
             mongodb.db["ya"].insert_many(new_df.to_dict("records"))  # DataFrame을 DB에 저장
-
             map_info = mongodb.db["ya"].find(
                 {"$and": [{"keyword": keyword}, {"rating": {"$gte": 3.0}}]}
             )  # 키워드가 같고 별점이 3.0 이상인 곳만 데이터 추출
