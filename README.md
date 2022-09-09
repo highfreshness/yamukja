@@ -44,8 +44,11 @@
   <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=FastAPI&logoColor=white">
 </div>
 
-  
+<br>  
 
-   
+ ## 프로젝트 개선점
+
+* 검색 및 크롤링 속도 개선 필요
+* 웹페이지 반응형으로 구현 필요
 
   
