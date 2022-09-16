@@ -1,4 +1,4 @@
-# [야먹자](http://highfreshness.shop/)
+# [야먹자(머신러닝을 이용한 지역 맛집 지도 서비스)](http://highfreshness.shop/)
 
 <br>
 
